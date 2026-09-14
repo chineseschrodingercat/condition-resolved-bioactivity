@@ -1,0 +1,10 @@
+molecule_id,patent,chembl_document_id,assay_id,activity_id,chembl_relation,chembl_value_nM,source_checked_relation,source_checked_value_or_bound_nM,source_note,standard_type
+CHEMBL1738797,US11066363B2 Example 14 Table 9,CHEMBL5728548,CHEMBL5736981,28396823,=,11.0,=,11.0,"ChEMBL patent transcription, not independently source-checked here",IC50
+CHEMBL3746395,US11066363B2 Example 14 Table 9,CHEMBL5728548,CHEMBL5736981,28396838,=,5.09,=,5.09,"ChEMBL patent transcription, not independently source-checked here",IC50
+CHEMBL3746522,US11066363B2 Example 14 Table 9,CHEMBL5728548,CHEMBL5736981,28396871,=,1.91,=,1.91,"ChEMBL patent transcription, not independently source-checked here",IC50
+CHEMBL3746665,US11066363B2 Example 14 Table 9,CHEMBL5728548,CHEMBL5736981,28396862,>,103.0,>,1000.0,patent >10^3; ChEMBL >103 likely exponent transcription,IC50
+CHEMBL3746960,US11066363B2 Example 14 Table 9,CHEMBL5728548,CHEMBL5736981,28396865,=,2.66,=,2.66,patent Table 9 exact,IC50
+CHEMBL3747108,US11066363B2 Example 14 Table 9,CHEMBL5728548,CHEMBL5736981,28396877,=,4.75,=,4.75,"ChEMBL patent transcription, not independently source-checked here",IC50
+CHEMBL3747134,US11066363B2 Example 14 Table 9,CHEMBL5728548,CHEMBL5736981,28396835,=,1.15,=,1.15,"ChEMBL patent transcription, not independently source-checked here",IC50
+CHEMBL3747406,US11066363B2 Example 14 Table 9,CHEMBL5728548,CHEMBL5736981,28396829,=,3.01,=,3.01,"ChEMBL patent transcription, not independently source-checked here",IC50
+CHEMBL3747611,US11066363B2 Example 14 Table 9,CHEMBL5728548,CHEMBL5736981,28396844,=,0.884,=,0.884,"ChEMBL patent transcription, not independently source-checked here",IC50

@@ -1,0 +1,4 @@
+strategy,molecule_a,molecule_b,a_srpk1_relation,a_srpk1_nM_or_bound,b_srpk1_relation,b_srpk1_nM_or_bound,srpk1_pair_abs_log10_gap_if_exact,srpk1_pair_fold_gap_lower_bound_if_valid,source_level_note
+contrast_matched_v0,CHEMBL3746665,CHEMBL3746960,>,1000.0,=,2.66,,375.939850,"same chemical series/inventors; patent cross-target assay, not independent lab replication"
+first_potency,CHEMBL1738797,CHEMBL3746522,=,11.0,=,1.91,0.760359,,"same chemical series/inventors; patent cross-target assay, not independent lab replication"
+geometric_mean_potency,CHEMBL3746665,CHEMBL3746522,>,1000.0,=,1.91,,523.560209,"same chemical series/inventors; patent cross-target assay, not independent lab replication"

@@ -1,0 +1,3 @@
+target,drug_panel,model,genotype,outcome,published_curve_matches,comparison_type,figure6_replicate_note,source_pmc,source_doi,evidence_role
+PARP1,olaparib|talazoparib|veliparib|saruparib,DLD1,BRCA2-/-,cellular lethality dose-response,cellular PARP1 catalytic inhibition,qualitative reported curve correspondence; numeric curves not digitized,example shown from n=2 experiments,PMC11006605,10.1038/s41586-024-07217-2,published context-regime positive control
+PARP1,olaparib|talazoparib|veliparib|saruparib,DLD1,BRCA2+/+,cellular lethality dose-response,PARP1/PARP2 chromatin trapping,qualitative reported curve correspondence; numeric curves not digitized,example shown from n=2 experiments,PMC11006605,10.1038/s41586-024-07217-2,published context-regime positive control

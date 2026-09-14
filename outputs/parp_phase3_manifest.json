@@ -1,0 +1,20 @@
+{
+  "purpose": "Source-checked PARP non-kinase rank discordance and genotype-dependent regime; not a newly inferred mechanism",
+  "2012_catalytic_figure": "Figure 4B, DT40 PAR ELISA, 120 min",
+  "2012_trapping_order": "MK-4827 > olaparib >> veliparib (ordinal abstract statement)",
+  "2024_context_figure": "Figure 6B and corresponding Results paragraph",
+  "2024_extra_causal_controls": "PARP1 siRNA, transcription-elongation inhibitor DRB, and TMZ discussed in source; no new experiment performed here",
+  "crosspaper_caution": "Different drug panels, organisms/cell models, assay conditions, and publication years; no pooled regression across papers.",
+  "sha256": {
+    "sources/pmc_article_PMC3528345_2026-09-13.xml": "367b312efc5a1330e88686cfa2e4cd96e30859f76fcea489481a7e738b4098d1",
+    "sources/pmc_article_PMC11006605_2026-09-13.xml": "9bfd614e6ff76b73856843c55f629cc009956a21a1031efec02e89e7100aa955",
+    "sources/pmc_metadata_PMC3528345_2026-09-13.json": "0bffa13366e4f1f9fff132ff4fc45170885db31d523bddd626739c132007beec",
+    "sources/pmc_metadata_PMC11006605_2026-09-13.json": "f65a2b1cf49c9c43724595ac5bc88344a6e42c93381bc5d7aa5d27e68b9db315",
+    "analysis/phase3_parp_regime.py": "f1dad1a5effe150161e9fb4909b50e202e3486f31e5f4e284daa58092f1e9399",
+    "analysis/phase3_parp_plot.py": "47cd00fa71ce731b4900f951dbdefbfee64b93b1ab43b8f0affa54c7f5ec60e5",
+    "outputs/parp_2012_cell_catalytic_vs_trapping.csv": "d556c69d17aacbbf616224c1a0e95a420ef8222f18b30b090aad41379773ac95",
+    "outputs/parp_2024_context_gate.csv": "262441f6981a98d21b1fa9516ed42b99c6e40a3645e640d2ee9c8134d2bd945a",
+    "outputs/phase3_source_index.csv": "430b785c810549e63acef1cbffccbcd6214dd1117799306fc1dd1f69a4c4726e",
+    "outputs/phase3_parp_rank_and_context_gate.png": "f2020c0d428b632a562c198abace44dda553b6db7d228de2b469ed44f627b851"
+  }
+}

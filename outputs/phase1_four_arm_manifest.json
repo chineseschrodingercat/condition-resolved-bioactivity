@@ -1,0 +1,31 @@
+{
+  "purpose": "LOO-molecule within-assay-pair pilot, not external mechanism validation",
+  "date": "2026-09-13",
+  "feature": "RDKit Morgan radius=2, 512 binary bits",
+  "model": "Linear Ridge(alpha=1.0, fit_intercept=True), dual kernel solved by pure-Python Gaussian elimination because local native BLAS crashed; fixed before evaluation",
+  "average_rule": "mean of paired pIC50; geometric mean of IC50 on nM scale",
+  "discard_rule": "keep first assay record per molecule, discard second; no tuned threshold",
+  "pool_rule": "both raw records, no condition, weight 0.5 each per molecule",
+  "context_rule": "same structure model for pair mean, plus global or structure-predicted paired delta",
+  "resource_accounting": "Same molecules and same two raw activity records initially available to each policy. Discard uses one per molecule; averaging combines two into one label; pooled/context retain two. The balanced pooled fit gives each molecule total weight 1.",
+  "sensitivity": "A fifth output group removes any 2019 JAK3 pair marked potential_duplicate in either assay; it is not part of the primary four-pair comparison.",
+  "literature_source_boundary": "The 2017 article was read via institutional subscribed access; only public ChEMBL snapshots, DOI links and our derived CSV/figures are stored here. The 2020 Petri article was open access.",
+  "software": {
+    "python": "3.10.20",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "rdkit": "2025.09.5"
+  },
+  "sha256": {
+    "analysis/phase1_four_arm.py": "ef827221832385de056d006177231b51fb1c4cd0ce4e68408c884bf4bc668229",
+    "analysis/phase1_source_transfer.py": "adcc619518ebf6c8e923cc5a7d869f94a3b960e9a355c8b4bf6b481c49082374",
+    "outputs/phase1_four_arm_predictions.csv": "0b86083bc3b6c3203fbc356995f8c039eb8b86ebbebee9d440acaf3d6e2b3ad5",
+    "outputs/phase1_four_arm_metrics.csv": "04bc419a12991d573158f1d6c72b7de13e94fe2f258b54839b3a627995cddb15",
+    "outputs/phase1_source_transfer_predictions.csv": "6bdbba963301810ef6552aa2b62a1e1f1ec05bf5387ba1d96cd983c23850cf0f",
+    "outputs/phase1_source_transfer_metrics.csv": "ad2123421390a62c450e76439dbf25eca89c44c7499a637f07478d60e3846113",
+    "outputs/jak3_atp_current_20_pairs.csv": "ade799c15ec0640c1b202556efec6e26cfb994f37103968adffe589d4458b9cb",
+    "outputs/jak3_2017_4uM_vs_1mM_matched_pairs.csv": "0cbad14660cf24d238f23b07fb8b41a565262ca4d1f80c1139cdf5e0db437c81",
+    "outputs/renin_plasma_vs_trypsin_matched_pairs.csv": "b6fa171e5c733c55e3fc201ad23a31a680794e07de0a94953fb8920812ef0530",
+    "outputs/kdr_htrf_vs_cell_matched_pairs.csv": "a99367ba587df9cf2622c0b520b5f2ba698a8348eb71826f96bbb1ff4e17373c"
+  }
+}

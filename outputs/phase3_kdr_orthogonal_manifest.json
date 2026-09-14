@@ -1,0 +1,71 @@
+{
+  "evidence_role": "Retrospective reanalysis of assay records all from published 2012 paper; not independent validation",
+  "paper_doi": "10.1016/j.bmcl.2012.05.067",
+  "input_assay_record_counts": {
+    "aurorab_biochem": 34,
+    "polyploidy_cell": 34,
+    "solubility": 11,
+    "microsome_stability": 11
+  },
+  "joined_kdr_molecules": 16,
+  "available_for_16": {
+    "aurorab_biochem": 16,
+    "polyploidy_cell": 16,
+    "solubility": 10,
+    "microsome_stability": 10
+  },
+  "exact_numeric_primary_rule": "Only '=' values in nM for EC15/IC50 potency; censored '<' and missing values retained in CSV but excluded from numerical correlations",
+  "correlations": [
+    {
+      "x": "p_kdr_biochem",
+      "y": "p_polyploidy_cell",
+      "n_molecules": 10,
+      "spearman_rho": -0.069859
+    },
+    {
+      "x": "p_kdr_cell",
+      "y": "p_polyploidy_cell",
+      "n_molecules": 10,
+      "spearman_rho": 0.232113
+    },
+    {
+      "x": "p_aurorab_biochem",
+      "y": "p_polyploidy_cell",
+      "n_molecules": 10,
+      "spearman_rho": 0.018877
+    },
+    {
+      "x": "log10_kdr_cell_over_biochem",
+      "y": "p_polyploidy_cell",
+      "n_molecules": 10,
+      "spearman_rho": 0.138013
+    }
+  ],
+  "independent_unit": "molecule within a single original publication and assay series; individual activities are not biological replicates",
+  "sha256": {
+    "outputs/kdr_htrf_vs_cell_matched_pairs.csv": "a99367ba587df9cf2622c0b520b5f2ba698a8348eb71826f96bbb1ff4e17373c",
+    "sources/chembl_activity_CHEMBL2073498_2026-09-13.json": "a92b254e164fbdfdaa2c600c3fab621ca8ec7c2f0f11c6de4ea07753fa839a19",
+    "sources/chembl_activity_CHEMBL2073500_2026-09-13.json": "ce79faaa55608654fac062394f68cc44f8774098613b758ac8d2d3c7e53a8344",
+    "sources/chembl_document_CHEMBL2069252_2026-09-13.json": "38a7d59ac383c3cf75023d0d91536402a4a45e01aa1062ff35b092bf15b945e6",
+    "sources/chembl_molecule_CHEMBL2071202_2026-09-13.json": "7fc7a6c5b124b068bd508d65bdee250b733af2775da5c68475d3232752f30303",
+    "sources/chembl_molecule_CHEMBL2071272_2026-09-13.json": "abc581fc1b27194355c5f0465bd7e41afb10b2c92d8c0087fce7330b67bfc713",
+    "sources/chembl_molecule_CHEMBL2071273_2026-09-13.json": "ed75f347b06824ebbbe47d7c6734aacbe68e0ebbdf3fa679ae9dfb2ee0d68b56",
+    "sources/chembl_activity_CHEMBL2073499_offset0_2026-09-13.json": "3ec4539ed88ad0d117a6261791f8f7456a7cc1164eceb6f7f3ee0b203d51a93f",
+    "sources/chembl_activity_CHEMBL2073499_offset10_2026-09-13.json": "1bcf324810de6b3bb1735addc083822f6397d3eb89f78ed889ae98b916cfc30f",
+    "sources/chembl_activity_CHEMBL2073499_offset20_2026-09-13.json": "14250af714833e03addba21fc82aa833159ab6076b8948eb5f3ff4875f0ac9b4",
+    "sources/chembl_activity_CHEMBL2073499_offset30_2026-09-13.json": "c73e5c0c93957d8831b317b69624006284cc2bfe4e3f3e3721efad544dee6213",
+    "sources/chembl_activity_CHEMBL2073501_offset0_2026-09-13.json": "e9d36870a7273b39950f665f9d0c4ce9d70bcc663f01caa88dca9adf1910b403",
+    "sources/chembl_activity_CHEMBL2073501_offset10_2026-09-13.json": "c67dc7c03dd078339c0c192144428dd69dda551735de16ccad77f4a4339b1b7f",
+    "sources/chembl_activity_CHEMBL2073501_offset20_2026-09-13.json": "40f185fe690305c8c80c0a5f0fac65d10f63b90bb257e5ecb032b511b405a9f8",
+    "sources/chembl_activity_CHEMBL2073501_offset30_2026-09-13.json": "d72e7fe4012bc6a92ac2453d2e18f7b8a6117dde3eb43380eb31f57502aadc50",
+    "sources/chembl_activity_CHEMBL2073502_offset0_2026-09-13.json": "91adfc6eca2a3cd5459a484931f99401da8f742bf2d3477a3c60e0cd7ba6c953",
+    "sources/chembl_activity_CHEMBL2073502_offset10_2026-09-13.json": "702a11669f9ff2a273158c40fef0468c5b82193040c1bf18e2fa529496deb133",
+    "sources/chembl_activity_CHEMBL2073503_offset0_2026-09-13.json": "866bbd0930c86dc813ac8f29b9b4e14769d5f947a24d0d67a00f454f139353e1",
+    "sources/chembl_activity_CHEMBL2073503_offset10_2026-09-13.json": "eea2b2db083dd69a1f7285b250cd1c844dc1619fc8cbcf3225af3ad039e5ad01",
+    "analysis/phase3_kdr_orthogonal_join.py": "839f690b6edb6f5ef1b4e5a96192a1514d565c8bb9ca88b24ede25dcd2e5247d",
+    "outputs/kdr_2012_orthogonal_endpoints_joined.csv": "b537c0cddde269bb753e6b517aa96db8d1542043fcfa1832bdaa39b023b19d69",
+    "outputs/phase3_kdr_source_index.csv": "5c14a7103a5e0f28e1d08c1c19057d8b120d85d3bc43a66833a18ce27dec5781",
+    "analysis/phase3_kdr_plot.py": "e21ca6993af078d4284b8e4e2612fa2c9ceca2ae2cd2d89a82a0e211093b8bcb",
+    "outputs/phase3_kdr_contrast_and_orthogonal_readout.png": "c3a9e85af10d4a9a9b09212d7f976d6b5c2eeb115c8fe394254151af56262eb0"
+  }
+}

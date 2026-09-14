@@ -1,0 +1,34 @@
+{
+  "selector_version": "v0_frozen_pre_reveal",
+  "source_id": "CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h",
+  "assay_axis": "target_site_variant",
+  "action_metadata_only": "allele_specific_engagement_or_site_control",
+  "action_contrast_aware": "allele_specific_engagement_or_site_control",
+  "action_comment": "v0 changes which matched molecules to test; an assay-axis-only baseline chooses the same assay family, intentionally exposing any lack of incremental action value",
+  "n_raw_molecules": 9,
+  "n_eligible": 9,
+  "excluded": [],
+  "orthogonal_outcomes_seen_by_selector": false,
+  "input_sha256": "cee33c6a4a15ee650a7941c835d212ca0dbe1447ab4aaade1cc4f4a02c50fac8",
+  "script_sha256": "4c4746ef5975b438e91327f2ed763a2de872262e0140d98937066f55293c401e",
+  "rdkit_version": "2025.09.5",
+  "median_log10_second_over_first": 0.935759,
+  "contrast_matched_pair": {
+    "molecule_ids": [
+      "CHEMBL3746665",
+      "CHEMBL3746960"
+    ],
+    "priority_score": 1.003659,
+    "response_difference_log10": 1.298853,
+    "morgan_tanimoto": 0.772727
+  },
+  "first_potency_pair": [
+    "CHEMBL1738797",
+    "CHEMBL3746522"
+  ],
+  "mean_potency_pair": [
+    "CHEMBL3746665",
+    "CHEMBL3746522"
+  ],
+  "number_of_candidate_pairs": 36
+}

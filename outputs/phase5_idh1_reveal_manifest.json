@@ -1,0 +1,39 @@
+{
+  "doi": "10.1021/ml300225h",
+  "document_id": "CHEMBL2176947",
+  "n_molecules": 8,
+  "n_assays": 7,
+  "n_rows": 56,
+  "strategies": {
+    "contrast_matched_v0": [
+      "CHEMBL2180728",
+      "CHEMBL2180746"
+    ],
+    "first_potency": [
+      "CHEMBL2180730",
+      "CHEMBL2180740"
+    ],
+    "geometric_mean_potency": [
+      "CHEMBL2180740",
+      "CHEMBL2180728"
+    ]
+  },
+  "limitation": "one publication/chemical series; literature retrospective, not independent source validation",
+  "sha256": {
+    "outputs/phase5_idh1_prereveal_input.csv": "1558b05be65589a21db6a335f905bd4bfae3fb23bde8a64ed7e0ac5233b8b109",
+    "outputs/phase5_idh1_v0_selection.json": "1eecf4dc7944ccbf8ff7efc25ff072f26c7bb217f23fbac4e03eae68c84abb05",
+    "analysis/phase5_idh1_reveal.py": "f160c3e8f40d6435e65c6e87b39f9795779b2c058fac59ce0509ffbf4e647ed7",
+    "sources/chembl_activity_CHEMBL2188256_offset0_phase5_2026-09-13.json": "2eaff5646f6a9928b3e88029de76e469e1ce826fa3e48b9654ea4c0aff4999a5",
+    "sources/chembl_activity_CHEMBL2188255_offset0_phase5_2026-09-13.json": "0e66eb36a5abad9e639f17966ee6c2a0a1797685851c64386a419ac2fcc914b1",
+    "sources/chembl_activity_CHEMBL2188262_offset0_phase5_2026-09-13.json": "84a67ff727551fcdc16e0e196f3b67999ab748a085d7cd296a17df619ec53737",
+    "sources/chembl_activity_CHEMBL2188262_offset10_phase5_2026-09-13.json": "1cc89cddca105b312d6dad6ac67f3dbf34142dc042526cf12aba6fe70901adb1",
+    "sources/chembl_activity_CHEMBL2188262_offset20_phase5_2026-09-13.json": "5045ec501ed35d8599dcfdd7f4b2fac39b090a92a9e8e67c24b7cc877dcd437a",
+    "sources/chembl_activity_CHEMBL2188262_offset30_phase5_2026-09-13.json": "9cdb60ccdfd7baf52c6669e5efcde9981b9027eb46b0ae74f563b50207132da2",
+    "sources/chembl_activity_CHEMBL2188258_offset0_phase5_2026-09-13.json": "5d1315bb84797158b248e79d9ed7b6690caab16dac6a5b4fb58e108ac214fdaf",
+    "sources/chembl_activity_CHEMBL2188253_offset0_phase5_2026-09-13.json": "de6c17f5ce3176693f38c4c00df6bfbb72a5b4b117f480203ded356ac53d84b5",
+    "sources/chembl_activity_CHEMBL2188254_offset0_phase5_2026-09-13.json": "b148fc927c24b502e88146e39c385b31bafc933d8141bd92668913182bfd6180",
+    "sources/chembl_activity_CHEMBL2188257_offset0_phase5_2026-09-13.json": "ee8a0550dedc6e47f81e75fb1accb4ec495459f99fa49e4e606e1de766926cf5",
+    "outputs/phase5_idh1_all_orthogonal_endpoints.csv": "e56a6b6777c1277229c6294e014690d55a381a07e1600b537ae5ca286898150d",
+    "outputs/phase5_idh1_equal_budget_reveal.csv": "b28fb060088f42d59f845f1a03689534fb02788aed9b4fb2fc220650b483abd7"
+  }
+}

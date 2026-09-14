@@ -1,0 +1,45 @@
+{
+  "purpose": "Published BTK WT/C481S binding contrast as corrected known positive control; cross-paper kinetic rank comparison",
+  "original_doi": "10.1021/acsptsci.4c00540",
+  "correction_label_doi": "10.1021/acsptsci.6c00190",
+  "correction_figure_doi": "10.1021/acsptsci.5c00551",
+  "independent_kinetics_paper_doi": "10.1021/acsptsci.5c00412",
+  "n_drugs": 15,
+  "n_covalent_corrected": 12,
+  "n_noncovalent_corrected": 3,
+  "n_mutant_Kd_lower_censored": 4,
+  "n_mutant_Kd_reported_N1": 15,
+  "assay_note": "Eurofins KdELECT ATP-site-dependent competition binding; N values come from corrected Tables 2/3 and do not denote biological replication.",
+  "original_to_corrected_cell_changes": [
+    {
+      "drug": "Poseltinib",
+      "field": "mechanism",
+      "original": "noncovalent",
+      "corrected": "covalent"
+    }
+  ],
+  "max_noncovalent_ratio": 1.1111111111111112,
+  "min_covalent_ratio_lower_bound": 12.096774193548388,
+  "apparent_auc_from_published_annotations": {
+    "WT_Kd_strength": 0.5694444444444444,
+    "mutant_over_WT_contrast_lower_bound": 1.0
+  },
+  "crosspaper_kinetic_rank": {
+    "n_overlapping_covalent_drugs": 8,
+    "n_with_exact_mutation_contrast": 6,
+    "spearman_ratio_vs_kinact_efficiency_rank_exact_only": -0.02857142857142857,
+    "interpretation_note": "The two papers assay different constructs/states; the numerical comparison is a hypothesis-generating axis check, not a mechanistic refutation or independent clinical validation."
+  },
+  "sha256": {
+    "sources/pmc_article_PMC11997881_2026-09-13.xml": "e4e593648d94cec2c6d08e8493365963883c3a2190684c3a5d67d9e63d994a93",
+    "sources/pmc_article_PMC13162048_2026-09-13.xml": "58f5b092956bd66df024ce83aadb394abb3377f7f70c208a11646ed2618786b3",
+    "sources/pmc_article_PMC12910487_2026-09-13.xml": "ce1c965e1f5c96dab3b2ef4dddb1f3b6212af5479062d31c06b9f6a49b88766c",
+    "sources/pmc_article_PMC12707263_2026-09-13.xml": "1a9319841950aed1151e183cb30bf166f606b014eb903c171d9a485905056c49",
+    "analysis/phase2_btk_corrected.py": "54af4beb31a12b7e7b46c24ab75b2dabe65bb8ddd01c74b85da2331110c47636",
+    "analysis/phase2_btk_plot.py": "48f1deac9e19e4f30b43a6f46c64c37c0e4c8e2352915110ea9d547dfd9a2ef7",
+    "outputs/btk_2025_corrected_15_binding_pairs.csv": "eb4de649d77734dbf5d19dd47a35e36274ff4355eea2449e18760d62bc25dcb6",
+    "outputs/btk_2025_correction_diff.csv": "aa3c46872cbb21f8b103915cbfbbd351a28d06a8ef8bb02c6aa3e285602ffd31",
+    "outputs/btk_crosspaper_8_kinetic_rank.csv": "09616a8aca2c994ce13026a112681654b86341122c80fb850c84e81ef089501e",
+    "outputs/phase2_btk_corrected_contrast_and_kinetics.png": "1d4b2119b329fb339b6dceb05b8942273e4499a1ce2ca198f580c9d239f429bf"
+  }
+}

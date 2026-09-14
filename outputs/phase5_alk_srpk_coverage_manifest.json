@@ -1,0 +1,19 @@
+{
+  "n_overlap_alk_patent_srpk1": 9,
+  "candidate_universe_conditioned_on_srpk1_coverage": true,
+  "same_budget": 2,
+  "selection_file": "outputs\\phase5_alk_srpk_coverage_v0_selection.json",
+  "source_correction": "compound 17 >10^3 nM patent, not ChEMBL >103 nM",
+  "sha256": {
+    "analysis/phase5_alk_srpk_coverage.py": "789e7584e1519ef3543170f1e5506f06c36f58a889e479bfb910f4ec37fbd3a9",
+    "outputs/phase4_alk_prereveal_input.csv": "1b748d353e664784127b18fa059b9b03c0b6b95d783a1885206f9758020aab33",
+    "outputs/phase5_alk_srpk_coverage_input.csv": "cee33c6a4a15ee650a7941c835d212ca0dbe1447ab4aaade1cc4f4a02c50fac8",
+    "outputs/phase5_alk_srpk_coverage_v0_selection.json": "e507dfa419e508dae2f94747df6bfdd02ea8a525371df2d9cdc8212d9394a90c",
+    "sources/chembl_activity_CHEMBL5736981_offset0_phase5_2026-09-13.json": "1db63f5d5338f354287eb30164bc6410e83c9b04d5c814d87e0cfedb38552172",
+    "sources/chembl_activity_CHEMBL5736981_offset10_phase5_2026-09-13.json": "834b7cdfbb75720583591468eeed88601185fe5b4835202c0f1adc6cc7594710",
+    "sources/chembl_activity_CHEMBL5736981_offset20_phase5_2026-09-13.json": "520442281d44204efaac7d3f5bd6187d232e101f8f3fd55444e5a9bd5c7a81f9",
+    "sources/chembl_activity_CHEMBL5736981_offset30_phase5_2026-09-13.json": "6764c9cc8f99f7f4095a6d87f1bc34612c01c78c9119d571be8d5087413376e4",
+    "outputs/phase5_alk_srpk_9_compound_audit.csv": "ed6ff04150535251d0321bcd0e8965b41e34eb0a904d90ca1ac7c55ea48cd2dd",
+    "outputs/phase5_alk_srpk_9_coverage_equal_budget.csv": "2c39419185b1d21f08b478a6bcbd60264233069ba8ee14371c3310f7eb6fc21d"
+  }
+}
