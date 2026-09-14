@@ -23,10 +23,10 @@ python analysis/phase5_alk_srpk_coverage.py prepare
 python analysis/phase4_v0_pair_selector.py --input outputs/phase5_alk_srpk_coverage_input.csv --output outputs/phase5_alk_srpk_coverage_v0_selection.json
 python analysis/phase5_alk_srpk_coverage.py reveal
 
-python analysis/commchem_data_figures_v1.py
+python analysis/commchem_data_figures_v1.py --v4
 ```
 
-The first two commands rebuild the Fig. 1 model comparison and cross-paper transfer tables from the four matched-pair CSVs. The ALK and IDH1 blocks recreate their pre-reveal inputs, two-compound decisions and withheld-readout tables from the included ChEMBL snapshots. The SRPK block repeats selection in the nine-compound subset with documented assay coverage, then computes the patent-linked comparison. The last command regenerates Figs. 1–5 as PNG and PDF files in `outputs/`; binary image hashes can vary with the local font/rendering environment. The JAK3/KDR/BTK/PARP contextual tables are preserved source-linked derived snapshots, not rebuilt by these commands. They can be traced using the ChEMBL document, assay, molecule and activity identifiers in the CSVs and source links below. The model uses leave-one-molecule-out fitting within each assay pair; its cross-paper JAK3 transfer changes multiple experimental features and is not a mechanism test.
+The first two commands rebuild the Fig. 1 model comparison and cross-paper transfer tables from the four matched-pair CSVs. The ALK and IDH1 blocks recreate their pre-reveal inputs, two-compound decisions and withheld-readout tables from the included ChEMBL snapshots. The SRPK block repeats selection in the nine-compound subset with documented assay coverage, then computes the patent-linked comparison. The last command regenerates the final v4 Figs. 1–5 as PNG and PDF files in `outputs/`; v4 uses a compact full-frame layout and no panel grids. Earlier v1 files remain as historical outputs. Binary image hashes can vary with the local font/rendering environment. The JAK3/KDR/BTK/PARP contextual tables are preserved source-linked derived snapshots, not rebuilt by these commands. They can be traced using the ChEMBL document, assay, molecule and activity identifiers in the CSVs and source links below. The model uses leave-one-molecule-out fitting within each assay pair; its cross-paper JAK3 transfer changes multiple experimental features and is not a mechanism test.
 
 ## Figure-to-data map
 
