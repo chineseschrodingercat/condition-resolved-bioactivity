@@ -37,16 +37,17 @@ def csv(name: str) -> pd.DataFrame:
 
 def style() -> None:
     plt.rcParams.update({
-        "font.family": "DejaVu Sans", "font.size": 9.5,
+        "font.family": "DejaVu Sans", "font.size": 10.6,
+        "axes.labelsize": 10.7, "xtick.labelsize": 10.1, "ytick.labelsize": 10.1,
         "axes.labelcolor": INK, "text.color": INK,
-        "axes.spines.top": False, "axes.spines.right": False,
-        "axes.edgecolor": "#6f7b81", "xtick.color": INK,
+        "axes.spines.top": True, "axes.spines.right": True,
+        "axes.linewidth": 1.05, "axes.edgecolor": "#6f7b81", "xtick.color": INK,
         "ytick.color": INK, "savefig.facecolor": "white",
     })
 
 
 def mark(ax, letter: str, title: str) -> None:
-    ax.set_title(f"{letter}  {title}", loc="left", fontsize=11, fontweight="bold", pad=10)
+    ax.set_title(f"{letter}  {title}", loc="left", fontsize=12, fontweight="bold", pad=11)
     ax.grid(axis="y", color="#d9e0e3", lw=.65, alpha=.75)
     ax.set_axisbelow(True)
 
@@ -90,7 +91,7 @@ def fig1() -> None:
         ax.bar(x+(j-1.5)*.19, vals, width=.19, color=METHOD_COLORS[j], label=METHOD_NAMES[j])
     ax.set_xticks(x, PAIR_NAMES)
     ax.set_ylabel("Both-readout LOOM MAE (pIC50)")
-    ax.legend(frameon=False, ncol=2, fontsize=8, loc="upper right")
+    ax.legend(frameon=False, ncol=2, fontsize=9, loc="upper right")
     mark(ax, "c", "Same-molecule record-policy baselines")
     ax = axs[1, 1]
     directions = list(transfer.train_source.drop_duplicates())
@@ -102,7 +103,7 @@ def fig1() -> None:
         ax.bar(np.arange(2)+(j-1)*.24, vals, .24, color=color, label=name)
     ax.set_xticks([0, 1], ["2019 → 2017\n5 test compounds", "2017 → 2019\n19 test compounds"])
     ax.set_ylabel("New-source contrast MAE (log10)")
-    ax.legend(frameon=False, fontsize=8)
+    ax.legend(frameon=False, fontsize=9)
     mark(ax, "d", "JAK3 paper transfer tests calibration")
     save(fig, "fig1_contrast_baselines")
 
@@ -148,11 +149,11 @@ def fig2() -> None:
     for i in range(3):
         for j in range(10):
             ax.text(j, i, "bound" if np.isnan(mat[i,j]) else f"{10**mat[i,j]:.1f}×",
-                    ha="center", va="center", fontsize=7.7,
+                    ha="center", va="center", fontsize=8.5,
                     color="white" if np.isfinite(mat[i,j]) and mat[i,j] > 1.3 else INK)
     ax.set_xticks(x, [s.replace("parental_BaF3", "Parental") for s in conditions], rotation=28, ha="right")
     ax.set_yticks(range(3), names)
-    ax.set_title("b  Equal two-compound budget: within-pair separation", loc="left", fontsize=11, fontweight="bold", pad=9)
+    ax.set_title("b  Equal two-compound budget: within-pair separation", loc="left", fontsize=12, fontweight="bold", pad=10)
     ax = fig.add_subplot(gs[1, 1])
     vals = []
     for st in strategies:
@@ -169,7 +170,7 @@ def fig2() -> None:
     ax.set_xlim(.8, 1500)
     ax.set_xlabel("SRPK1 within-pair separation (fold)")
     for i, (v, bounded) in enumerate(vals):
-        ax.text(v*1.08, i, f">{v:.0f}×" if bounded else f"{v:.1f}×", va="center", fontsize=9)
+        ax.text(v*1.08, i, f">{v:.0f}×" if bounded else f"{v:.1f}×", va="center", fontsize=9.5)
     mark(ax, "c", "Cross-target endpoint in the same patent")
     save(fig, "fig2_alk_spectra")
 
@@ -187,7 +188,8 @@ def fig3() -> None:
         selected = mid in chosen
         ax.scatter(x, y, s=95 if selected else 43, color=ORANGE if selected else MUTED,
                    edgecolors=INK if selected else "none", zorder=3)
-        ax.annotate(mid[-4:], (x, y), xytext=(4, 5), textcoords="offset points", fontsize=8)
+        offset = (-28, -12) if mid.endswith("0727") else (4, 5)
+        ax.annotate(mid[-4:], (x, y), xytext=offset, textcoords="offset points", fontsize=9)
     ax.set(xscale="log", yscale="log", xlabel="R132C enzyme IC50 (nM)",
            ylabel="HT1080 2-HG IC50 (nM)")
     mark(ax, "a", "Eight matched compounds")
@@ -200,11 +202,11 @@ def fig3() -> None:
     ax.set_yscale("log")
     ax.set_xticks(x, ["R132C\nenzyme", "HT1080\n2-HG", "R132H\nenzyme", "U87\n2-HG"])
     ax.set_ylabel("IC50 (nM)")
-    ax.legend(title="CHEMBL218…", frameon=False, fontsize=8)
+    ax.legend(title="CHEMBL218…", frameon=False, fontsize=9)
     mark(ax, "b", "Selected pair across four endpoints")
     ax = axs[2]
-    labels = {"contrast_matched_v0": "Contrast", "first_potency": "Enzyme potency",
-              "geometric_mean_potency": "Mean potency"}
+    labels = {"contrast_matched_v0": "Contrast", "first_potency": "Enzyme",
+              "geometric_mean_potency": "Mean"}
     vals = 10**reveal.U87_2HG_within_pair_abs_log10_gap.to_numpy(float)
     ax.barh(range(3), vals, color=[TEAL, MUTED, MUTED])
     ax.set_yticks(range(3), [labels[s] for s in reveal.strategy])
@@ -212,7 +214,7 @@ def fig3() -> None:
     ax.set_xlim(0, 3.1)
     ax.set_xlabel("U87 2-HG pair gap (fold)")
     for i, v in enumerate(vals):
-        ax.text(v+.05, i, f"{v:.2f}×", va="center", fontsize=9)
+        ax.text(v+.05, i, f"{v:.2f}×", va="center", fontsize=9.5)
     mark(ax, "c", "Withheld R132H-cell readout")
     save(fig, "fig3_idh1_context")
 
@@ -237,8 +239,8 @@ def fig4() -> None:
                                ("CHEMBL4085582", "71.3×", (6, 2))]:
         r = jak[jak.molecule_chembl_id.eq(mid)].iloc[0]
         ax.annotate(label, (r.ATP_ratio_high_over_low, r.whole_blood_over_PBMC),
-                    xytext=offset, textcoords="offset points", fontsize=8)
-    ax.legend(frameon=False, fontsize=8, title="Highlighted ChEMBL IDs", title_fontsize=8)
+                    xytext=offset, textcoords="offset points", fontsize=9)
+    ax.legend(frameon=False, fontsize=9, title="Highlighted ChEMBL IDs", title_fontsize=9)
     mark(ax, "a", "JAK3: two measured context axes")
     ax = axs[0,1]
     for mid, color, label in [("CHEMBL4085457", TEAL, "PF-06651600"),
@@ -248,7 +250,7 @@ def fig4() -> None:
                 marker="o", lw=2, ms=6, color=color, label=label)
     ax.set(yscale="log", xticks=range(4), xticklabels=["4 µM ATP", "1 mM ATP", "PBMC\n75 min", "Blood\n45 min"],
            ylabel="IC50 (nM)")
-    ax.legend(frameon=False, fontsize=8)
+    ax.legend(frameon=False, fontsize=9)
     mark(ax, "b", "JAK3: two molecules, four assay records")
     focus = {"CHEMBL2071202": TEAL, "CHEMBL2071272": ORANGE, "CHEMBL2071273": PURPLE}
     ax = axs[1,0]
@@ -275,7 +277,7 @@ def fig4() -> None:
                    edgecolors=INK if mid in focus else "none", zorder=3)
     ax.set(xscale="log", yscale="log", xlabel="KDR cell / biochemical IC50",
            ylabel="Polyploidy EC15 (nM or upper bound)")
-    ax.text(.02, .97, "▼  reported < bound", transform=ax.transAxes, va="top", fontsize=8)
+    ax.text(.02, .97, "▼  reported < bound", transform=ax.transAxes, va="top", fontsize=9)
     mark(ax, "d", "Distinct polyploidy-cell readout")
     save(fig, "fig4_jak3_kdr")
 
@@ -300,15 +302,16 @@ def fig5() -> None:
            ylabel="C481S Kd (nM or lower bound)")
     ax.set_xlim(.07, 40)
     ax.set_ylim(.05, 2300)
-    ax.legend(frameon=False, fontsize=7, ncol=2, loc="lower right")
+    ax.legend(frameon=False, fontsize=8.8, ncol=2, loc="lower right")
     mark(ax, "a", "Corrected BTK mutation contrasts")
     ax = axs[1]
     for _, r in kinetic.iterrows():
         bound = r.ratio_relation == ">"
         ax.scatter(r.C481S_over_WT_ratio_boundary, r.kinact_over_KI_rank_high_to_low,
                    marker="^" if bound else "o", color=TEAL, s=65)
+        offset, align = ((-5, -11), "right") if r.drug == "Branebrutinib" else ((4, 3), "left")
         ax.annotate(r.drug, (r.C481S_over_WT_ratio_boundary, r.kinact_over_KI_rank_high_to_low),
-                    xytext=(4, 3), textcoords="offset points", fontsize=7.4)
+                    xytext=offset, textcoords="offset points", fontsize=8.8, ha=align)
     ax.set(xscale="log", ylim=(8.6,.4), yticks=range(1,9),
            xlabel="C481S / WT Kd ratio (bounds marked ▲)",
            ylabel="Independent kinact/KI rank (1 = highest)")
@@ -322,7 +325,7 @@ def fig5() -> None:
     ax.set(xlim=(-.1,1.1), ylim=(3.3,.7), yticks=[1,2,3], xticks=[0,1],
            xticklabels=["Cellular PAR\ninhibition", "PARP trapping\n(source ordinal)"],
            ylabel="Rank (1 = strongest)")
-    ax.legend(frameon=False, fontsize=8)
+    ax.legend(frameon=False, fontsize=9)
     mark(ax, "c", "Published PARP source-ordinal rank inversion")
     save(fig, "fig5_btk_parp")
 

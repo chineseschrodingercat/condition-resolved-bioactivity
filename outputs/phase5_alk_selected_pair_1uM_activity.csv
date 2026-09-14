@@ -1,0 +1,7 @@
+molecule_id,condition,assay_id,activity_id,relation,reported_activity_percent_at_1uM,note
+CHEMBL3746665,WT_1uM,CHEMBL3748830,16427404,=,2.0,ChEMBL label Activity (%); sign/meaning not inferred from label alone
+CHEMBL3746960,WT_1uM,CHEMBL3748830,16427406,=,0.1,ChEMBL label Activity (%); sign/meaning not inferred from label alone
+CHEMBL3746665,G1202R_1uM,CHEMBL3748831,16427434,=,9.0,ChEMBL label Activity (%); sign/meaning not inferred from label alone
+CHEMBL3746960,G1202R_1uM,CHEMBL3748831,16427436,=,0.1,ChEMBL label Activity (%); sign/meaning not inferred from label alone
+CHEMBL3746665,parental_1uM,CHEMBL3748832,16427464,=,18.0,ChEMBL label Activity (%); sign/meaning not inferred from label alone
+CHEMBL3746960,parental_1uM,CHEMBL3748832,16427466,=,37.0,ChEMBL label Activity (%); sign/meaning not inferred from label alone

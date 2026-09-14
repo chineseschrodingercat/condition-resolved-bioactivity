@@ -1,0 +1,24 @@
+{
+  "source": "CHEMBL2176947_IDH1_R132C_enzyme_vs_HT1080_2HG_48h",
+  "paper_doi": "10.1021/ml300225h",
+  "n_shared_compounds": 8,
+  "allowed_input_columns": [
+    "source_id",
+    "assay_axis",
+    "molecule_id",
+    "canonical_smiles",
+    "first_ic50_nM",
+    "second_ic50_nM",
+    "first_relation",
+    "second_relation"
+  ],
+  "enzyme_endpoint": "IDH1 R132C biochemical IC50, alpha-ketoglutarate substrate, 60 min, nM",
+  "cell_endpoint": "HT1080 IDH1 R132C cellular 2-HG inhibition IC50, 48 h, nM",
+  "sha256": {
+    "sources/chembl_activity_CHEMBL2188256_offset0_phase5_2026-09-13.json": "2eaff5646f6a9928b3e88029de76e469e1ce826fa3e48b9654ea4c0aff4999a5",
+    "sources/chembl_activity_CHEMBL2188255_offset0_phase5_2026-09-13.json": "0e66eb36a5abad9e639f17966ee6c2a0a1797685851c64386a419ac2fcc914b1",
+    "analysis/phase5_idh1_input.py": "9c02fa862d824fcd7c3b2a97815152d63b0cca54aa2219c084ac6717e2c33462",
+    "outputs/phase5_idh1_prereveal_input.csv": "1558b05be65589a21db6a335f905bd4bfae3fb23bde8a64ed7e0ac5233b8b109",
+    "outputs/phase5_idh1_pair_provenance.csv": "fce957f2e337a2fd325cd544e564ad325419a37f04eac15d49c3158450201553"
+  }
+}

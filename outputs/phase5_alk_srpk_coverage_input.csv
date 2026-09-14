@@ -1,0 +1,10 @@
+source_id,assay_axis,molecule_id,canonical_smiles,first_ic50_nM,second_ic50_nM,first_relation,second_relation
+CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h,target_site_variant,CHEMBL1738797,CCc1cc2c(cc1N1CCC(N3CCOCC3)CC1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O,2.0,90.0,=,=
+CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h,target_site_variant,CHEMBL3746395,CCc1cc2c(cc1-c1cnoc1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O,59.0,634.0,=,=
+CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h,target_site_variant,CHEMBL3746522,CCc1cc2c(cc1-c1cnn(CCN(C)C)c1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O,2.0,80.0,=,=
+CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h,target_site_variant,CHEMBL3746665,CCc1cc2c(cc1N1CCC(N(C)C)CC1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O,2.0,10.0,=,=
+CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h,target_site_variant,CHEMBL3746960,CCc1cc2c(cc1N1CCN(C)CC1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O,2.0,199.0,=,=
+CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h,target_site_variant,CHEMBL3747108,CCc1cc2c(cc1-c1cnn(C(=O)N(C)C)c1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O,56.0,483.0,=,=
+CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h,target_site_variant,CHEMBL3747134,CCc1cc2c(cc1-c1cc[nH]n1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O,50.0,273.0,=,=
+CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h,target_site_variant,CHEMBL3747406,CCc1cc2c(cc1-c1cnn(C)c1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O,61.0,370.0,=,=
+CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h,target_site_variant,CHEMBL3747611,CCc1cc2c(cc1-c1cnn[nH]1)C(C)(C)c1[nH]c3cc(C#N)ccc3c1C2=O,115.0,629.0,=,=

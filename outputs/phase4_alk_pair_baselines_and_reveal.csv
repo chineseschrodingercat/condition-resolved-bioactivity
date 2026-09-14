@@ -1,0 +1,4 @@
+selection,molecule_A,molecule_B,A_wt_nM,B_wt_nM,A_wt_relation,B_wt_relation,wt_pair_abs_log10_gap,A_l1196m_nM,B_l1196m_nM,A_l1196m_relation,B_l1196m_relation,l1196m_pair_abs_log10_gap,A_g1202r_nM,B_g1202r_nM,A_g1202r_relation,B_g1202r_relation,g1202r_pair_abs_log10_gap,A_parental_nM,B_parental_nM,A_parental_relation,B_parental_relation,parental_pair_abs_log10_gap
+contrast_matched_v0,CHEMBL3746665,CHEMBL3746960,2.0,2.0,=,=,0.0,10.0,199.0,=,=,1.298853,214.0,478.0,=,=,0.349014,6255.0,5646.0,=,=,0.044486
+first_potency_baseline,CHEMBL1738797,CHEMBL3735401,2.0,2.0,=,=,0.0,90.0,58.0,=,=,0.190815,207.0,2.0,=,=,2.01494,1000.0,591.0,>,=,
+mean_potency_baseline,CHEMBL3397300,CHEMBL3746665,5.0,2.0,=,=,0.39794,3.0,10.0,=,=,0.522879,56.0,214.0,=,=,0.582226,1921.0,6255.0,=,=,0.5127

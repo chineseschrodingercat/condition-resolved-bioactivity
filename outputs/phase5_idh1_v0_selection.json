@@ -1,0 +1,34 @@
+{
+  "selector_version": "v0_frozen_pre_reveal",
+  "source_id": "CHEMBL2176947_IDH1_R132C_enzyme_vs_HT1080_2HG_48h",
+  "assay_axis": "biochemical_to_cellular",
+  "action_metadata_only": "intracellular_exposure_then_target_engagement",
+  "action_contrast_aware": "intracellular_exposure_then_target_engagement",
+  "action_comment": "v0 changes which matched molecules to test; an assay-axis-only baseline chooses the same assay family, intentionally exposing any lack of incremental action value",
+  "n_raw_molecules": 8,
+  "n_eligible": 8,
+  "excluded": [],
+  "orthogonal_outcomes_seen_by_selector": false,
+  "input_sha256": "1558b05be65589a21db6a335f905bd4bfae3fb23bde8a64ed7e0ac5233b8b109",
+  "script_sha256": "4c4746ef5975b438e91327f2ed763a2de872262e0140d98937066f55293c401e",
+  "rdkit_version": "2025.09.5",
+  "median_log10_second_over_first": 0.59633,
+  "contrast_matched_pair": {
+    "molecule_ids": [
+      "CHEMBL2180728",
+      "CHEMBL2180746"
+    ],
+    "priority_score": 0.257306,
+    "response_difference_log10": 0.452762,
+    "morgan_tanimoto": 0.623377
+  },
+  "first_potency_pair": [
+    "CHEMBL2180730",
+    "CHEMBL2180740"
+  ],
+  "mean_potency_pair": [
+    "CHEMBL2180740",
+    "CHEMBL2180728"
+  ],
+  "number_of_candidate_pairs": 28
+}

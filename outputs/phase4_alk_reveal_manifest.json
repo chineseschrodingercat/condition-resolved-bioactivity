@@ -1,0 +1,24 @@
+{
+  "claim_scope": "Additional G1202R and parental Ba/F3 readouts in the same 2015 ALK study; descriptive replay, not new measurements or independent-source mechanism test",
+  "selected_v0_pair": [
+    "CHEMBL3746665",
+    "CHEMBL3746960"
+  ],
+  "selection_frozen_sha256": "76c3df3689b0762b27dbc229a6d6eeabf197c235be98ff67e739104b55bd9d31",
+  "revealed_assay_ids": {
+    "g1202r": "CHEMBL3748826",
+    "parental": "CHEMBL3748829"
+  },
+  "direct_cellular_palk_coverage_for_selected_pair": "No matched numerical phospho-ALK engagement pair in the queried 2015 ChEMBL source; CHEMBL3748833 has one qualitative compound other than both selected IDs",
+  "sha256": {
+    "sources/chembl_activity_CHEMBL3748826_offset0_phase4_2026-09-13.json": "f64f57a9b2d8031b0043d0d3bfd1b2c1ac2fd4db6b375831daa196fd55c7b3e4",
+    "sources/chembl_activity_CHEMBL3748826_offset10_phase4_2026-09-13.json": "b2fd7066b7736beb8947583e7c72844ff578879b9c6dcd3586c75331c915ae52",
+    "sources/chembl_activity_CHEMBL3748829_offset0_phase4_2026-09-13.json": "256b73ac4f179d55f9c7098ec2216866c33f8b374605b5dbe23164da677e5d20",
+    "sources/chembl_activity_CHEMBL3748829_offset10_phase4_2026-09-13.json": "bb2858411d3d4c18e9e925b0b8602776e50627b7300aaa222846aa422ca1928f",
+    "outputs/phase4_alk_prereveal_input.csv": "1b748d353e664784127b18fa059b9b03c0b6b95d783a1885206f9758020aab33",
+    "outputs/phase4_alk_v0_selection.json": "76c3df3689b0762b27dbc229a6d6eeabf197c235be98ff67e739104b55bd9d31",
+    "analysis/phase4_alk_reveal.py": "98b978bb5acab75f51de6d3a549a93b18ef9456d6c80da613644c054a24b49f2",
+    "outputs/phase4_alk_revealed_extra_endpoints.csv": "b90defe2c0a300c8d5bd1fef29121c23f273ee71c96577824b6d24a658ae1feb",
+    "outputs/phase4_alk_pair_baselines_and_reveal.csv": "5f7e7bdb94893d505730d173c343928855ad787fccf7ccab7778cd166765dadf"
+  }
+}

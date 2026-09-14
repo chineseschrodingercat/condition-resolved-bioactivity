@@ -1,0 +1,30 @@
+{
+  "source_id": "CHEMBL3745656_PMC4907642_BaF3_WT_vs_L1196M_MTS72h",
+  "n_molecules": 18,
+  "known_assay_caption_conflict": "Original Table 1 caption calls phospho-ALK, but its footnote and ChEMBL assay descriptions specify 72 h MTS viability; use the latter",
+  "pre_reveal_columns_only": [
+    "source_id",
+    "assay_axis",
+    "molecule_id",
+    "canonical_smiles",
+    "first_ic50_nM",
+    "second_ic50_nM",
+    "first_relation",
+    "second_relation"
+  ],
+  "raw_paths": [
+    "sources/chembl_activity_CHEMBL3748820_offset0_phase4_2026-09-13.json",
+    "sources/chembl_activity_CHEMBL3748820_offset10_phase4_2026-09-13.json",
+    "sources/chembl_activity_CHEMBL3748823_offset0_phase4_2026-09-13.json",
+    "sources/chembl_activity_CHEMBL3748823_offset10_phase4_2026-09-13.json"
+  ],
+  "sha256": {
+    "sources/chembl_activity_CHEMBL3748820_offset0_phase4_2026-09-13.json": "5124a7622452fd98d8ebeb76fd4bc2aeffe2aa78f68b93a8d6fddcf063d6bfe7",
+    "sources/chembl_activity_CHEMBL3748820_offset10_phase4_2026-09-13.json": "44f99ec1703e18bfb0f453f14791bfac352b0247ecde90c29f1fd2ce2c9d3790",
+    "sources/chembl_activity_CHEMBL3748823_offset0_phase4_2026-09-13.json": "4deca87e984213a6b9ef2b7af885b539a6348d76628442fa3cd1009ad1d8e19d",
+    "sources/chembl_activity_CHEMBL3748823_offset10_phase4_2026-09-13.json": "d4cc529beb670564766090570fd38c75ff8ff615406d004ec56165e788cdfc86",
+    "analysis/phase4_alk_input.py": "1dca9eef08fd0f518e42527e834ae98e2e30fbd4e636d2ee3f99ee75fa111d9b",
+    "outputs/phase4_alk_prereveal_input.csv": "1b748d353e664784127b18fa059b9b03c0b6b95d783a1885206f9758020aab33",
+    "outputs/phase4_alk_pair_provenance.csv": "0471d6b52d05371aed4f5a1984b9a02f84f3276b82e31e47542c82db25862410"
+  }
+}

@@ -1,0 +1,9 @@
+molecule_id,document_chembl_id,enzyme_assay_id,enzyme_activity_id,cell_2hg_assay_id,cell_2hg_activity_id,enzyme_potential_duplicate,cell_potential_duplicate,enzyme_data_validity_comment,cell_data_validity_comment,independent_unit_note
+CHEMBL2180727,CHEMBL2176947,CHEMBL2188256,12147150,CHEMBL2188255,12147134,0,0,,,"Same 2012 chemical series, not independent source-level validation"
+CHEMBL2180728,CHEMBL2176947,CHEMBL2188256,12147173,CHEMBL2188255,12147154,0,0,,,"Same 2012 chemical series, not independent source-level validation"
+CHEMBL2180729,CHEMBL2176947,CHEMBL2188256,12147172,CHEMBL2188255,12147149,0,0,,,"Same 2012 chemical series, not independent source-level validation"
+CHEMBL2180730,CHEMBL2176947,CHEMBL2188256,12147175,CHEMBL2188255,12147151,0,0,,,"Same 2012 chemical series, not independent source-level validation"
+CHEMBL2180738,CHEMBL2176947,CHEMBL2188256,12147164,CHEMBL2188255,12147145,0,0,,,"Same 2012 chemical series, not independent source-level validation"
+CHEMBL2180739,CHEMBL2176947,CHEMBL2188256,12147168,CHEMBL2188255,12147142,0,0,,,"Same 2012 chemical series, not independent source-level validation"
+CHEMBL2180740,CHEMBL2176947,CHEMBL2188256,12147174,CHEMBL2188255,12147156,0,0,,,"Same 2012 chemical series, not independent source-level validation"
+CHEMBL2180746,CHEMBL2176947,CHEMBL2188256,12147169,CHEMBL2188255,12147137,0,0,,,"Same 2012 chemical series, not independent source-level validation"
